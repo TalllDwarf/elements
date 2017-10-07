@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class Game_Quit : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-  
- }
+    public void quitGame()
+    {
+        Debug.Log("Has Quit The Game");
+        Application.Quit();
+    }
+
+
+}
