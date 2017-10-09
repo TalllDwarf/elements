@@ -25,4 +25,9 @@ public class PauseGame : MonoBehaviour {
             }
         }
     }
+
+    public void QuitToMainMenu()
+    {
+        Application.LoadLevel(0);
+    }
 }
