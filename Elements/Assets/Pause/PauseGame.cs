@@ -9,7 +9,7 @@ public class PauseGame : MonoBehaviour {
         Time.timeScale = 1;
     }
 
-    private void Update()
+     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
