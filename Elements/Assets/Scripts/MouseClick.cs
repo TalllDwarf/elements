@@ -79,6 +79,10 @@ public class MouseClick : MonoBehaviour
                 }
                     break;
             case SelectElement.earth:
+                if (gameObject.tag == "Ground")
+                {
+                    anim.SetInteger("element", (int)selectedElement);
+                }
                 break;
             case SelectElement.idle:
                 break;
