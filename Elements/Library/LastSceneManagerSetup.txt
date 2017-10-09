@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Oliver_Test_Scene.unity
+=======
+- path: Assets/MouseTests.unity
+>>>>>>> Jacks-Branch
   isLoaded: 1
   isActive: 1
