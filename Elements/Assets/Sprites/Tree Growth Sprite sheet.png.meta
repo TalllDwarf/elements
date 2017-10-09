@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 69a0fd4c5e2375b498d4b1bd67b91f25
-timeCreated: 1507402937
+timeCreated: 1507568007
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -84,7 +84,7 @@ TextureImporter:
         width: 185
         height: 188
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -97,7 +97,7 @@ TextureImporter:
         width: 48
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -105,12 +105,12 @@ TextureImporter:
       name: Tree Growth Sprite sheet_5
       rect:
         serializedVersion: 2
-        x: 118
+        x: 86
         y: 0
-        width: 89
-        height: 123
+        width: 185
+        height: 188
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -118,12 +118,12 @@ TextureImporter:
       name: Tree Growth Sprite sheet_6
       rect:
         serializedVersion: 2
-        x: 267
+        x: 235
         y: 0
-        width: 89
-        height: 128
+        width: 185
+        height: 188
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -131,12 +131,12 @@ TextureImporter:
       name: Tree Growth Sprite sheet_7
       rect:
         serializedVersion: 2
-        x: 413
+        x: 401
         y: 0
-        width: 167
-        height: 175
+        width: 185
+        height: 188
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -144,12 +144,12 @@ TextureImporter:
       name: Tree Growth Sprite sheet_8
       rect:
         serializedVersion: 2
-        x: 33
+        x: 0
         y: 0
-        width: 54
-        height: 53
+        width: 114
+        height: 188
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

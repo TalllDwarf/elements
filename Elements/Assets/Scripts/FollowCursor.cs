@@ -10,14 +10,14 @@ public class FollowCursor : MonoBehaviour {
     Texture2D currentTexture;
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
-    public string element;
+    public  SelectElement element;
     // Use this for initialization
     void Start ()
     {
         Cursor.visible = true;
         currentTexture = cursorTextureWind;
         Cursor.SetCursor(currentTexture, Vector2.zero, cursorMode);
-        element = "wind";
+        element = SelectElement.wind;
     }
 	
 	// Update is called once per frame
@@ -26,23 +26,28 @@ public class FollowCursor : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.Q))
         {
             currentTexture = cursorTextureWind;
-            element = "wind";
+            element = SelectElement.wind;
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
             currentTexture = cursorTextureFire;
-            element = "fire";
+            element = SelectElement.fire;
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
             currentTexture = cursorTextureEarth;
-            element = "earth";
+            element = SelectElement.earth;
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
             currentTexture = cursorTextureWater;
-            element = "water";
+            element = SelectElement.water;
         }
         Cursor.SetCursor(currentTexture, Vector2.zero, cursorMode);
     }
+    
+}
+public enum SelectElement
+{
+    fire, water, earth, wind, idle
 }

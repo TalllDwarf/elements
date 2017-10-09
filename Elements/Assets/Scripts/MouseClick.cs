@@ -5,7 +5,6 @@ using UnityEngine;
 public class MouseClick : MonoBehaviour
 {
     
-    string currentElement;
     GameObject princess;
     Animator anim;
     public bool clicked;
@@ -14,8 +13,7 @@ public class MouseClick : MonoBehaviour
     public bool wind;
     public bool water;
     bool moving = false;
-    public float animationLength;
-    public GameObject replacement;
+    public SelectElement selectedElement;
 
     // Use this for initialization
     void Start ()
@@ -29,62 +27,72 @@ public class MouseClick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentElement = princess.GetComponent<FollowCursor>().element;
-        anim.SetBool("Clicked", clicked);
-        anim.SetBool("Wind", wind);
-        anim.SetBool("Water", water);
-        anim.SetBool("Fire", fire);
-        anim.SetBool("Earth", earth);
-
+        selectedElement = princess.GetComponent<FollowCursor>().element;
         
         if(moving && gameObject.tag == "SnowBoulder")
         {
             gameObject.GetComponent<Transform>().position = new Vector2(gameObject.GetComponent<Transform>().position.x + 0.1f, gameObject.GetComponent<Transform>().position.y);
+ 
         }
-
     }
     void OnMouseDown()
     {
-        //Destroy(gameObject);
-        // Debug.Log(mousePos);
-        clicked = true;
-        switch(currentElement)
+        selectedElement = princess.GetComponent<FollowCursor>().element;
+       
+        switch (selectedElement)
         {
-            case "fire":
-                fire = true;
-                animationLength = anim.GetCurrentAnimatorStateInfo(0).length;
+
+            case SelectElement.fire:
+                
+                
                 if (gameObject.tag == "Tree")
                 {
-                    StartCoroutine(Wait());
+                    //StartCoroutine(Wait());
+                    anim.SetInteger("element", (int)selectedElement);
+                    gameObject.tag = "Stump";
+                    gameObject.GetComponent<PolygonCollider2D>().enabled = false;
                 }
-                fire = true;
                 break;
-            case "water":
-                water = true;
-                animationLength = anim.GetCurrentAnimatorStateInfo(0).length;
+            case SelectElement.water:
+                
                 if (gameObject.tag == "Stump")
                 {
-                    StartCoroutine(Wait());
+                    anim.SetInteger("element", (int)selectedElement);
+                    gameObject.tag = "Tree";
+                    gameObject.GetComponent<PolygonCollider2D>().enabled = true;
+                }
+                if(gameObject.tag == "Ground")
+                {
+                    anim.SetInteger("element", (int)selectedElement);
                 }
                 break;
-            case "wind":
-                wind = true;
-                moving = true;
+            case SelectElement.wind:
+                if (gameObject.tag == "SnowBoulder")
+                {
+                    moving = true;
+                    anim.SetInteger("element", (int)selectedElement);
+                }
+                if (gameObject.tag == "Tree")
+                {
+                    gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+                    anim.SetInteger("element", (int)selectedElement);
+                }
+                    break;
+            case SelectElement.earth:
                 break;
-            case "earth":
-                earth = true;
+            case SelectElement.idle:
                 break;
             default:
                 break;
         }
     }
-    public IEnumerator Wait()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        yield return new WaitForSecondsRealtime(animationLength);
-        Instantiate(replacement, gameObject.GetComponent<Transform>().position, Quaternion.identity);
-        replacement.GetComponent<SpriteRenderer>().sortingOrder = gameObject.GetComponent<SpriteRenderer>().sortingOrder;
-        Destroy(gameObject);
-
+        if(collision.tag == "Tree")
+        {
+            moving = false;
+            selectedElement = SelectElement.idle;
+            anim.SetInteger("element", (int)selectedElement);
+        }
     }
 }
