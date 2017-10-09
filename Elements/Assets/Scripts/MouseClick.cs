@@ -82,6 +82,7 @@ public class MouseClick : MonoBehaviour
                 if (gameObject.tag == "Ground")
                 {
                     anim.SetInteger("element", (int)selectedElement);
+                    gameObject.tag = "Springboard";
                 }
                 break;
             case SelectElement.idle:
