@@ -52,6 +52,7 @@ public class MouseClick : MonoBehaviour
                     //StartCoroutine(Wait());
                     anim.SetInteger("element", (int)selectedElement);
                     gameObject.tag = "Stump";
+                    gameObject.layer = 11;
                     gameObject.GetComponent<PolygonCollider2D>().enabled = false;
                 }
                 if (gameObject.tag == "Ice")
@@ -67,6 +68,7 @@ public class MouseClick : MonoBehaviour
                 {
                     anim.SetInteger("element", (int)selectedElement);
                     gameObject.tag = "Tree";
+                    gameObject.layer = 9;
                     gameObject.GetComponent<PolygonCollider2D>().enabled = true;
                 }
                 if(gameObject.tag == "Ground")
@@ -89,6 +91,7 @@ public class MouseClick : MonoBehaviour
                 if (gameObject.tag == "Tree")
                 {
                     gameObject.GetComponent<PolygonCollider2D>().enabled = false;
+                    gameObject.layer = 11;
                     anim.SetInteger("element", (int)selectedElement);
                 }
                 if (gameObject.tag == "Ground")

@@ -28,6 +28,6 @@ public class PauseGame : MonoBehaviour {
 
     public void QuitToMainMenu()
     {
-        Application.LoadLevel(1);
+        Application.LoadLevel(0);
     }
 }
