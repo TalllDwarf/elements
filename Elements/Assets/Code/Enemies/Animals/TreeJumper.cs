@@ -33,7 +33,7 @@ public class TreeJumper : Animal {
 
             transform.position += (dropVector * Time.deltaTime);
 
-            if (transform.position.y <= dropZ || Vector3.Distance(transform.position, GetPlayer().transform.position) <= .1)
+            if (Vector3.Distance(transform.position, GetPlayer().transform.position) <= .2)
             {
                 hitFloor = true;
                 animalAnimator.SetBool(Tags.animHitFloorID, true);
@@ -53,7 +53,6 @@ public class TreeJumper : Animal {
         if(collider.tag == Tags.Player)
         {
             collider.GetComponent<PrincessWalk>().killPlayer();
-            dropZ = collider.transform.position.y;
         }
     }
 }

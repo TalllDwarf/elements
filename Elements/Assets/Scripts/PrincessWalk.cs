@@ -17,6 +17,8 @@ public class PrincessWalk : MonoBehaviour
     public bool falling;
     public bool jumping;
 
+    private float endTimer;
+
     private Animator animations;
 
     // Use this for initialization
@@ -28,9 +30,8 @@ public class PrincessWalk : MonoBehaviour
     }
     public void killPlayer()
     {
+        endTimer = 2.0f;
         dead = true;
-        Application.LoadLevel(2);
-
     }
     // Update is called once per frame
     void Update()
@@ -113,6 +114,14 @@ public class PrincessWalk : MonoBehaviour
             //Needs to be at/near the end for checking when player hits the floor
             wasAirborne = !onGround;
         }
+        else
+        {
+            endTimer -= Time.deltaTime;
+
+            if(endTimer <= 0)
+                Application.LoadLevel(2);
+        }
+
         if (fallSpeed < 0)
         {
             falling = true;
