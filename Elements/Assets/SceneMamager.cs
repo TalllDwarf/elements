@@ -34,7 +34,8 @@ public class SceneMamager : MonoBehaviour {
 
     public void LoadScene(string name)
     {
-        SceneManager.LoadScene("Playing", LoadSceneMode.Additive);
+        Time.timeScale = 1;
+        SceneManager.LoadScene("LevelOne");
     }
 
     public void Quit()

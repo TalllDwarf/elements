@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/LevelOne.unity
-=======
-- path: Assets/Pause/PauseScreen.unity
->>>>>>> Tom's_Branch
+- path: Assets/Main_Menu/MainMenu.unity
   isLoaded: 1
   isActive: 1
