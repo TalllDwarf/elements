@@ -41,7 +41,7 @@ public class PrincessWalk : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = new Vector3(movementSpeed, GetComponent<Rigidbody2D>().velocity.y, 1);
             //Turns around at terrain walls
             changeDirection = Physics2D.Raycast(transform.position + transform.right*0.5f, transform.right,0.5f);
-            Debug.DrawRay(transform.position + transform.right * 1, transform.right* 0.5f,Color.red,4f);
+            //Debug.DrawRay(transform.position + transform.right * 1, transform.right* 0.5f,Color.red,4f);
             if (changeDirection)
             {
                 switch (changeDirection.collider.tag)
