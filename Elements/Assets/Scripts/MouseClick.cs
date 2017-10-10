@@ -14,7 +14,9 @@ public class MouseClick : MonoBehaviour
     public bool water;
     bool moving = false;
     public SelectElement selectedElement;
-
+    public GameObject fallbreaker;
+    public Sprite ice;
+    public Sprite stillWater;
     // Use this for initialization
     void Start ()
     {
@@ -52,6 +54,12 @@ public class MouseClick : MonoBehaviour
                     gameObject.tag = "Stump";
                     gameObject.GetComponent<PolygonCollider2D>().enabled = false;
                 }
+                if (gameObject.tag == "Ice")
+                {
+                    GetComponent<SpriteRenderer>().sprite = stillWater;
+                    GetComponent<PolygonCollider2D>().enabled = false;
+                        gameObject.tag = "Water";
+                }
                 break;
             case SelectElement.water:
                 
@@ -65,6 +73,12 @@ public class MouseClick : MonoBehaviour
                 {
                     anim.SetInteger("element", (int)selectedElement);
                 }
+                if (gameObject.tag == "Water")
+                {
+                    GetComponent<SpriteRenderer>().sprite = ice;
+                    GetComponent<PolygonCollider2D>().enabled = true;
+                    gameObject.tag = "Ice";
+                }
                 break;
             case SelectElement.wind:
                 if (gameObject.tag == "SnowBoulder")
@@ -77,7 +91,12 @@ public class MouseClick : MonoBehaviour
                     gameObject.GetComponent<PolygonCollider2D>().enabled = false;
                     anim.SetInteger("element", (int)selectedElement);
                 }
-                    break;
+                if (gameObject.tag == "Ground")
+                {
+                    Instantiate(fallbreaker, transform.position, Quaternion.identity);
+                    gameObject.tag = "Wind";
+                }
+                break;
             case SelectElement.earth:
                 if (gameObject.tag == "Ground")
                 {
@@ -98,6 +117,15 @@ public class MouseClick : MonoBehaviour
             moving = false;
             selectedElement = SelectElement.idle;
             anim.SetInteger("element", (int)selectedElement);
+            Destroy(gameObject);
+        }
+        if (collision.tag == "Enemy" && gameObject.tag == "SnowBoulder")
+        {
+           Destroy(collision.gameObject);
+        }
+        if (collision.tag == "Water" && gameObject.tag == "SnowBoulder")
+        {
+            Destroy(gameObject);
         }
     }
 }

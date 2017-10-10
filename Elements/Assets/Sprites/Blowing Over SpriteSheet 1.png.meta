@@ -1,0 +1,258 @@
+fileFormatVersion: 2
+guid: a49229523deab204197233937840d427
+timeCreated: 1507600714
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Blowing Over SpriteSheet 1_0
+    21300002: Blowing Over SpriteSheet 1_1
+    21300004: Blowing Over SpriteSheet 1_2
+    21300006: Blowing Over SpriteSheet 1_3
+    21300008: Blowing Over SpriteSheet 1_4
+    21300010: Blowing Over SpriteSheet 1_5
+    21300012: Blowing Over SpriteSheet 1_6
+    21300014: Blowing Over SpriteSheet 1_8
+    21300016: Blowing Over SpriteSheet 1_9
+    21300018: Blowing Over SpriteSheet 1_10
+    21300020: Blowing Over SpriteSheet 1_11
+    21300022: Blowing Over SpriteSheet 1_12
+    21300024: Blowing Over SpriteSheet 1_14
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 275
+        width: 224
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 275
+        width: 224
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 275
+        width: 224
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 275
+        width: 224
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 275
+        width: 224
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 8, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 275
+        width: 224
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 275
+        width: 224
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 40
+        width: 224
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 40
+        width: 224
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 40
+        width: 224
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 40
+        width: 224
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 40
+        width: 298
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Blowing Over SpriteSheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 40
+        width: 363
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

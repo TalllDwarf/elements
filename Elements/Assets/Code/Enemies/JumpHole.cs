@@ -9,9 +9,9 @@ public class JumpHole : MonoBehaviour {
     private float blinkTimer;
     private Animator anim;
     private bool alive = true;
-
-	// Use this for initialization
-	void Start () {
+    public GameObject tree;
+    // Use this for initialization
+    void Start () {
         blinkTimer = Random.Range(10, 100);
         anim = GetComponent<Animator>();
 	}
@@ -27,7 +27,11 @@ public class JumpHole : MonoBehaviour {
                 anim.SetBool("Blink", true);
             }
         }
-	}
+        if (tree.tag == "Stump")
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void BlinkReset()
     {

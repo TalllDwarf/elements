@@ -160,7 +160,7 @@ public abstract class Animal : MonoBehaviour
 
         if (animalVision)
         {
-            Debug.Log(animalVision.collider.tag);
+            
             return (animalVision.collider.tag == Tags.Player);
         }
         return false;
@@ -184,7 +184,7 @@ public abstract class Animal : MonoBehaviour
     /// <summary>
     /// After the dying state we set the animal as dead
     /// </summary>
-    protected void Died()
+    public void Died()
     {
         currentAnimalState = animalStates.Dead;
         AnimationUpdate();
@@ -207,6 +207,10 @@ public abstract class Animal : MonoBehaviour
         {
             collider.GetComponent<PrincessWalk>().killPlayer();
             Died();
+        }
+        if (collider.tag == "Springboard")
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-100, 300));
         }
     }
 }

@@ -33,16 +33,16 @@ public class PrincessWalk : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-
+        gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 3));
         fallSpeed = GetComponent<Rigidbody2D>().velocity.y;
         if (!dead)
         {
             //Gets the Lemming going
             GetComponent<Rigidbody2D>().velocity = new Vector3(movementSpeed, GetComponent<Rigidbody2D>().velocity.y, 1);
             //Turns around at terrain walls
-            changeDirection = Physics2D.Raycast(transform.position + transform.right*0.5f, transform.right,0.5f);
+            changeDirection = Physics2D.Raycast(transform.position + transform.right*0.2f, transform.right,0.2f);
             //Debug.DrawRay(transform.position + transform.right * 1, transform.right* 0.5f,Color.red,4f);
-            if (changeDirection)
+          /*  if (changeDirection)
             {
                 switch (changeDirection.collider.tag)
                 {
@@ -61,19 +61,23 @@ public class PrincessWalk : MonoBehaviour
                     default:
                         break;
                 }
-            }
+            }*/
             //Checks if character is on the ground, if not takes the falling speed, if it is too much the princess dies
             grounded = Physics2D.Raycast(transform.position + -transform.up * 0.2f, -transform.up, 0.1f);
             if (grounded)
             {
                 if (grounded.collider.tag == "Springboard")
                 {
-                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 2));
+                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 75));
                 }
                 else if (grounded.collider.tag == "Ground")
                 {
                     onGround = true;
                     
+                }
+                else if(grounded.collider.tag == "Water")
+                {
+                    dead = true;
                 }
                 else
                 {
@@ -84,7 +88,7 @@ public class PrincessWalk : MonoBehaviour
             {
                 onGround = false;
             }
-            if (onGround && fallSpeed < -4f)
+            if (onGround && fallSpeed < -7f)
             {
                 killPlayer();
             }

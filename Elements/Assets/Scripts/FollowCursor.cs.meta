@@ -1,11 +1,16 @@
 fileFormatVersion: 2
 guid: 4c608913590c947478e4cf5daddb992a
-timeCreated: 1506880889
+timeCreated: 1507601500
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
   defaultReferences:
-  - cursorTexture: {fileID: 2800000, guid: 276183d442c46444fb5f186c7ab3c7c0, type: 3}
+  - cursorTextureFire: {fileID: 2800000, guid: f795b6c692eeddc45bd3366cea87d384, type: 3}
+  - cursorTextureWater: {fileID: 2800000, guid: df9fab0067a09a94cb36db513af92a57,
+      type: 3}
+  - cursorTextureEarth: {fileID: 2800000, guid: 958c3dbe4730a3a439814e974866d617,
+      type: 3}
+  - cursorTextureWind: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

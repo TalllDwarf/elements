@@ -9,6 +9,7 @@ public class TreeJumper : Animal {
 
     private float dropZ;
     private bool hitFloor = false;
+    
 
     protected override void Attack(Transform playerTransform)
     {
@@ -38,6 +39,7 @@ public class TreeJumper : Animal {
                 animalAnimator.SetBool(Tags.animHitFloorID, true);
             }
         }
+       
     }
 
     
