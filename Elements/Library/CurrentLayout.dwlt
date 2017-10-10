@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,10 +42,17 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
   controlID: 11
+=======
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 45
+>>>>>>> Tom's_Branch
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -60,6 +67,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1531
     y: 0
     width: 389
@@ -67,6 +75,15 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
+=======
+    x: 1591
+    y: 0
+    width: 329
+    height: 947
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
+>>>>>>> Tom's_Branch
   m_Panes:
   - {fileID: 15}
   m_Selected: 0
@@ -87,11 +104,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 379
     height: 573
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
+=======
+    width: 290
+    height: 676
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+>>>>>>> Tom's_Branch
   m_Panes:
   - {fileID: 16}
   m_Selected: 0
@@ -111,9 +136,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 573
     width: 1531
     height: 374
+=======
+    y: 676
+    width: 1591
+    height: 271
+>>>>>>> Tom's_Branch
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 14}
@@ -204,12 +235,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1531
     height: 947
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 12
+=======
+    width: 1591
+    height: 947
+  m_MinSize: {x: 404, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
+  vertical: 1
+  controlID: 46
+>>>>>>> Tom's_Branch
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,12 +268,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1531
     height: 573
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
   controlID: 13
+=======
+    width: 1591
+    height: 676
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
+  vertical: 0
+  controlID: 47
+>>>>>>> Tom's_Branch
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,6 +297,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 379
     y: 0
     width: 1152
@@ -255,6 +305,15 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 17}
+=======
+    x: 290
+    y: 0
+    width: 1301
+    height: 676
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
+>>>>>>> Tom's_Branch
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
@@ -368,9 +427,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 665
     width: 1529
     height: 353
+=======
+    y: 768
+    width: 1589
+    height: 250
+>>>>>>> Tom's_Branch
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -382,12 +447,13 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Pause
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Pause
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: C:\Users\Jack\Documents\GitHub\elements\Elements
   m_IsLocked: 0
   m_FolderTreeState:
@@ -395,6 +461,15 @@ MonoBehaviour:
     m_SelectedIDs: c8240000
     m_LastClickedID: 9416
     m_ExpandedIDs: 00000000c824000000ca9a3bffffff7f
+=======
+  m_LastProjectPath: D:\Uni\GitHun\elements\Elements
+  m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: b2250000
+    m_LastClickedID: 9650
+    m_ExpandedIDs: 0000000084250000ae25000000ca9a3bffffff7f
+>>>>>>> Tom's_Branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -422,7 +497,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000c8240000
+=======
+    m_ExpandedIDs: 0000000084250000ae250000
+>>>>>>> Tom's_Branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -450,7 +529,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c62300000000000016440000a2760000
+=======
+    m_ExpandedInstanceIDs: 
+>>>>>>> Tom's_Branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -499,9 +582,15 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1533
     y: 92
     width: 387
+=======
+    x: 1593
+    y: 92
+    width: 327
+>>>>>>> Tom's_Branch
     height: 926
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
@@ -534,6 +623,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
+<<<<<<< HEAD
     width: 377
     height: 552
   m_TreeViewState:
@@ -541,6 +631,15 @@ MonoBehaviour:
     m_SelectedIDs: 7872f3ff
     m_LastClickedID: -822664
     m_ExpandedIDs: dc00fdfffc2cfdffe4fbffff00000000
+=======
+    width: 288
+    height: 655
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: f418ffffb826ffff2827ffffea27ffffee27ffff7e9effff96a5ffffa8a7ffff14a8ffffdea8ffffe2a8ffff40bbffffacbbffff7abcffff82bcffff9cbeffff08bfffffd2bfffffd6bfffff48caffffb8caffff82cbffff86cbfffffaceffff6ccfffff36d0ffff3ad0ffff88d7ffff0ed8ffffe8d9ffff54daffff1edbffff28dbffff36dcffffa2dcffff6cddffff76ddffff5eeaffff0eefffff7aefffff46f0ffff4af0ffff5af1ffffc6f1ffff96f2ffff9ef2ffffaafbffff00000000d2250000ee25000022260000122900002e2900005629000062290000022a0000202a00003a2a00008c320000723700007a370000f03b0000143c0000503c00006a3f0000743f0000b43f0000ee3f0000a0400000ac400000
+>>>>>>> Tom's_Branch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: groundflatsnow (25)
@@ -559,7 +658,11 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
+<<<<<<< HEAD
   - LevelOne
+=======
+  - PauseScreen
+>>>>>>> Tom's_Branch
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -585,19 +688,34 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 381
     y: 92
     width: 1148
     height: 552
   m_SceneLighting: 1
   lastFramingTime: 6113.1225780289315
+=======
+    x: 292
+    y: 92
+    width: 1297
+    height: 655
+  m_SceneLighting: 1
+  lastFramingTime: 0
+>>>>>>> Tom's_Branch
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -4.523667, y: -1.8552306, z: 0}
     speed: 2
     m_Value: {x: -4.523667, y: -1.8552306, z: 0}
+=======
+    m_Target: {x: 3.8500385, y: 6.614666, z: 0}
+    speed: 2
+    m_Value: {x: 3.8500385, y: 6.614666, z: 0}
+>>>>>>> Tom's_Branch
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -624,9 +742,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 8.879386
     speed: 2
     m_Value: 8.879386
+=======
+    m_Target: 136.78563
+    speed: 2
+    m_Value: 136.78563
+>>>>>>> Tom's_Branch
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -659,10 +783,17 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 381
     y: 92
     width: 1148
     height: 552
+=======
+    x: 292
+    y: 92
+    width: 1297
+    height: 655
+>>>>>>> Tom's_Branch
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
@@ -671,10 +802,17 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -574
     m_HBaseRangeMax: 574
     m_VBaseRangeMin: -267.5
     m_VBaseRangeMax: 267.5
+=======
+    m_HBaseRangeMin: -648.5
+    m_HBaseRangeMax: 648.5
+    m_VBaseRangeMin: -319
+    m_VBaseRangeMax: 319
+>>>>>>> Tom's_Branch
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -691,25 +829,43 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
       width: 1148
       height: 535
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 574, y: 267.5}
+=======
+      width: 1297
+      height: 638
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 648.5, y: 319}
+>>>>>>> Tom's_Branch
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -574
       y: -267.5
       width: 1148
       height: 535
+=======
+      x: -648.5
+      y: -319
+      width: 1297
+      height: 638
+>>>>>>> Tom's_Branch
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1148, y: 552}
+=======
+  m_LastWindowPixelSize: {x: 1297, y: 655}
+>>>>>>> Tom's_Branch
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
