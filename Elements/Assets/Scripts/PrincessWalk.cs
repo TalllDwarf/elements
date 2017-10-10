@@ -122,12 +122,12 @@ public class PrincessWalk : MonoBehaviour
                 Application.LoadLevel(2);
         }
 
-        if (fallSpeed < 0)
+        if (fallSpeed < -0.5)
         {
             falling = true;
             jumping = false;
         }
-        else if (fallSpeed > 0)
+        else if (fallSpeed > 0.5)
         {
             falling = false;
             jumping = true;
