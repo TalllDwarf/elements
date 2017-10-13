@@ -59,7 +59,7 @@ public class MouseClick : MonoBehaviour
                 {
                     GetComponent<SpriteRenderer>().sprite = stillWater;
                     GetComponent<PolygonCollider2D>().enabled = false;
-                        gameObject.tag = "Water";
+                    gameObject.tag = "Water";
                 }
                 break;
             case SelectElement.water:
